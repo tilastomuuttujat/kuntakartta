@@ -30,10 +30,10 @@
 
     function case1() {
 
-        var options = {url_geoson: "data/kuntarajat-ok.geojson"};
+        var options = {url_geoson: "kuntarajat-ok.geojson"};
         var map = $("#map1").mapcolorizer(options).data("mapcolorizer");
         map.init(function() {
-            map.loadData("data/2014-tulovero.json");
+            map.loadData("2014-tulovero.json");
             map.setTileServer("mapquest");
         });
     }
@@ -47,7 +47,7 @@
         var colors = ['#ffffe0', '#ffe2bd', '#ffc39c', '#ffa480',
             '#ff7f6a', '#f9575c', '#e63652', '#cb1942', '#ac0528', '#8b0000'];
 
-        var options = {url_geoson: "data/kuntarajat-uusimaa.geojson",
+        var options = {url_geoson: "kuntarajat-uusimaa.geojson",
             color_scale: colors};
         var map = $("#map2").mapcolorizer(options).data("mapcolorizer");
         map.init(function() {
