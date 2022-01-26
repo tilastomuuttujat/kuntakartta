@@ -53,7 +53,7 @@
             load_data();
         });
 
-        var options = {url_geoson: "data/kuntarajat-ok.geojson"};
+        var options = {url_geoson: "kuntarajat-ok.geojson"};
         map = $("#map").mapcolorizer(options).data("mapcolorizer");
         map.init(function() {
 
@@ -84,7 +84,7 @@
         if (fname == "none")
             fname = null;
         else
-            fname = "data/" + fname + ".json";
+            fname = "" + fname + ".json";
 
         if (json_dropped) {
             fname = json_dropped;
